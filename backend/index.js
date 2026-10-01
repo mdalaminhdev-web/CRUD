@@ -36,6 +36,13 @@ app.get("/admin", (req,res)=>{
     res.send(" Hello this is the admin panel");
 })
 
+app.post("/books", (req,res)=>{
+    const q = "INSERT INTO books (`title`,`desc`,`cover`) VALUES (?)"
+const values = ["Title from backend", "Desc frombackend","Cover pic from bcakend"]
+})
+
+
+
 app.listen(8800, () => {
     console.log("Connected to backend on port 8800");
 });
