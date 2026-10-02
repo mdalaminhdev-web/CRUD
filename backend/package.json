@@ -1,4 +1,5 @@
 {
+  // Metadata for the backend package  
   "name": "backend",
   "version": "1.0.0",
   "description": "",
