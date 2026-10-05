@@ -43,6 +43,15 @@ app.get("/S", (req,res)=>{
     res.send(" Hello this is the S panel");
 })
 
+
+app.get("/ag", (req,res)=>{
+    res.send(" Hello this is the S panel");
+})
+
+app.get("/ag1", (req,res)=>{
+    res.send(" Hello this is the ag1 panel");
+})
+
 app.post("/books", (req,res)=>{
     const q = "INSERT INTO books (`title`,`desc`,`cover`) VALUES (?)"
     const values = ["Title from backend", "Desc frombackend","Cover pic from bcakend"]
